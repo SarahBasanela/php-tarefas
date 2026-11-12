@@ -10,15 +10,17 @@
 <body>
     <main>
         <h1>Resultado Final</h1>
-        <?php
-        $n = $_POST['num'];
-        $antecessor = $n - 1;
-        $sucessor = $n + 1;
-        echo "<p>O número escolhido foi $n</p>";
-        echo "<p>O seu antecessor é $antecessor</p>";
-        echo "<p>O seu sucessor é $sucessor</p>";
-        ?>
-        <p><a href="javascript:history.go(-1)">Voltar a página anterior</a></p>
+        <p>
+            <?php
+            $n = $_POST['num'];
+            $antecessor = $n - 1;
+            $sucessor = $n + 1;
+            echo "<p>O número escolhido foi $n</p>";
+            echo "<p>O seu antecessor é $antecessor</p>";
+            echo "<p>O seu sucessor é $sucessor</p>";
+            ?>
+        </p>
+        <button onclick="javascript:window.location.href='index.html'">Voltar</button>
     </main>
 </body>
 </html>
