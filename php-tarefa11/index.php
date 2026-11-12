@@ -22,15 +22,11 @@
     </main>
     <section>
         <h2>Resultado Final</h2>
-        <p>Analisando o <strong>número <?= $num ?></strong>, temos:</p>
-        <li>
-            <ul>
-                A sua rais quadrada é <?= number_format($r2, 3, ",") ?>
-            </ul>
-            <ul>
-                A sua raiz cúbica é <?= number_format($r3, 3, ",") ?>
-            </ul>
-        </li>
+        <?php 
+        echo "<p>Analisando o <strong>número <?= $num ?></strong>, temos:</p>";
+        echo "<ul><li>A sua raiz quadrada é " . number_format($r2, 2, ",", ".") ." </li></ul>";
+        echo "<ul><li>A sua raiz cúbica é " . number_format($r3, 2, ",", ".") ." </li></ul>";       
+        ?>
     </section>
 </body>
 </html>
