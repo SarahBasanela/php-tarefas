@@ -225,3 +225,29 @@ input[type=radio] + label, input[type=checkbox] + label {
     font-size: 1em;
     background-color: rgba(0, 0, 0, 0);
 }
+table.divisao {
+    margin: 20px auto;
+    border-collapse: collapse; /* junta as bordas, sem espaços entre elas */
+}
+
+table.divisao td {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 15px 40px;
+}
+
+/* divisor: linha à esquerda e por baixo */
+table.divisao tr:first-child td:last-child {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* quociente: continua a linha vertical */
+table.divisao tr:last-child td:last-child {
+    border-left: 3px solid black;
+}
+
+/* resto: sublinhado */
+table.divisao tr:last-child td:first-child {
+    text-decoration: underline;
+}
